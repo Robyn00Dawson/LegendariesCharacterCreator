@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Web Page</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="style.css" rel="stylesheet">
+</head>
+<body onclick="runTheNumbers();">
+  <header>
+    <h1 >Legendaries Character Creator</h1>
+    <hr>
+  </header>
+  <main>
+
+    <p>Enter values for your attributes. When you click to save changes, it will calculate the total XP and GP of character you created. </p>
+    <input type="submit" value="Save Changes">
+    <p> <span>XP: </span> <span id='xpTotal'>196</span> </p>
+    <p> <span>GP: </span> <span id='gpTotal'>6</span> </p>
+    <hr>
+    <form action="index.html" method="POST">
+      <section class="Attributes">   
+        <h1>Attributes</h1>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Attribute</th>
+              <th scope="col"> Check</th>
+              <th scope="col">Character Number</th>
+              <th scope="col">Equipment Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><label for="int">Intellect</label></td>
+              <td id="intCheck">7</td>
+              <td><input type="number" name="int" id="int-char" value="7"></td>
+              <td><input type="number" name="int" id="int-eqp" value="0"></td>
+            </tr>
+            <tr>
+              <td><label for="awr">Awareness</label></td>
+              <td id="awrCheck">9</td>
+              <td><input type="number" name="awr" id="awr-char" value="7"></td>
+              <td><input type="number" name="awr" id="awr-eqp" value="2"></td>
+            </tr>
+            <tr>
+              <td><label for="soc">Social</label></td>
+              <td id="socCheck">9</td>
+              <td><input type="number" name="soc" id="soc-char" value="7"></td>
+              <td><input type="number" name="soc" id="soc-eqp" value="2"></td>
+            </tr>
+            <tr>
+              <td><label for="str">Strength</label></td>
+              <td id="strCheck">7</td>
+              <td><input type="number" name="str" id="str-char" value="7"></td>
+            <td><input type="number" name="str" id="str-eqp" value="0"></td>
+            </tr>
+            <tr>
+              <td><label for="spd">Speed</label></td>
+              <td id="spdCheck">7</td>
+              <td><input type="number" name="spd" id="spd-char" value="7"></td>
+              <td><input type="number" name="spd" id="spd-eqp" value="0"></td>
+            </tr>
+            <tr>
+              <td><label for="lck">Luck</label></td>
+              <td id="lckCheck">7</td>
+              <td><input type="number" name="lck" id="lck-char" value="7"></td>
+              <td><input type="number" name="lck" id="lck-eqp" value="0"></td>
+            </tr>
+            <tr>
+              <td><label for="fns">Finesses</label></td>
+              <td id="fnsCheck">7</td>
+              <td><input type="number" name="fns" id="fns-char" value="7"></td>
+              <td><input type="number" name="fns" id="fns-eqp" value="0"></td>
+            </tr>
+          </tbody>    
+        </table>
+      </section>
+      <section class="abilities">
+        <hr>
+        <h1>Abilities</h1>     
+      </section>  
+    </form>
+  </main>
+  <script src="lccscript.js"></script>
+</body>
+</html>
