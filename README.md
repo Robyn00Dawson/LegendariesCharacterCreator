@@ -1,5 +1,4 @@
 # learningToCode
-This is a repository for the codes I write while I am learning how to code.
-I will start with HTML, CSS, and Javascript, which I am learning at the moment.
-More may be added later as I learn new langauages.
-Comments within my code are intended to help me learn and remember the techniques and syntax that I use.
+This is a character creator for a table-top roleplaying game called legendaries.
+This is also practice for me to learn the basics of html and javascript.
+The character creator is still under construction. More will be added later as I learn.
